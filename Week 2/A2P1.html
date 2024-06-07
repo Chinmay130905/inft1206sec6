@@ -98,18 +98,12 @@
   </head>
   <body>
     <header>
-      <h1>Mozilla</h1>
+      <h1>Mozilla Rockstars</h1>
       <img src="../Images/firefox_logo-only_RGB 120 px.png" alt="Firefox logo">
-      </header>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
-
     </header>
-
     <main>
       <article>
-        <!-- insert iframe from youtube -->
-        <iframe src="https://www.youtube.com/watch?v=ojcNcvb1olg"> </iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/watch?v=ojcNcvb1olg" title="Youtube Video Player" frameborder="0"  allow="accelator; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -121,7 +115,12 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img
+          srcset="firefox_logo-only_RGB 120px.png,firefox_logo-only_RGB 400px.png"
+          sizes="(max-width: 400px) 120px, 400px"
+          src="../Images/firefox_logo-only_RGB 400 px.png"
+          alt="Firefox logo"
+          >
         </a>
         <a href="https://www.mozilla.org/">
           <img>
