@@ -1,3 +1,11 @@
+/*
+Name: Chinmay Singh
+Date: 2024-06-21
+File Name: Photography.css
+This is the css file responsible for the layout 
+*/
+
+
 body {
     background-color: #fff;
     color: #333;
@@ -67,6 +75,29 @@ body {
     margin-right: 1%;
   }
 
+  main {
+    display: grid;
+    grid-template-areas:
+      "article article aside aside"
+      ;
+    grid-gap: 20%;
+  }
+
+  article {
+    grid-area: article;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+  
+  .photos {
+    columns: 2;
+  }
+  
+  .photos li {
+    margin: 0.1em;
+  }
 
 
 
