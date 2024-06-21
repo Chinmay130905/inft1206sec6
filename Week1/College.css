@@ -95,7 +95,7 @@ This is the css file for the College page */
   }
   
   a:visited {
-    color: red; 
+    color: rgb(67, 61, 61); 
   }
 
   a:focus {
@@ -104,10 +104,36 @@ This is the css file for the College page */
   }
   
   a:hover {
-    background: rgba(170, 102, 102, 0.4); 
+    background: rgba(148, 13, 13, 0.4); 
     text-decoration: none; 
   }
 
+  
+  a[href*="http"] {
+    background: url("../Images/external-link-52.png") no-repeat 100% 0;
+    background-size: 18px 18px;
+    padding-right: 20px;
+  }
+  
+  ul{
+    list-style-type: square;
+  }
+
+  ol {
+    list-style-type: lower-roman;
+  }
+
+  nav a {
+    outline: black; 
+    text-decoration: none;
+    border: 3px solid;
+    padding: 4 px;
+    width: 80%;
+    padding: 20%,20%;
+    text-align: center;
+    margin-bottom: 10%;
+    line-height: 2;
+  }
   
 
   
