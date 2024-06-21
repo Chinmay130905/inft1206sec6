@@ -35,6 +35,7 @@ body {
   }
   
   nav a {
+
     color: #fff;
     text-decoration: none;
     padding: .5em 1em;
@@ -48,4 +49,27 @@ body {
 
   .feature {
       width: 200px;
+  }¨
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
   }
+
+  nav{
+    position: sticky;
+    top: 0px;
+  }
+
+  .feature {
+    float: left;
+    margin-right: 1%;
+  }
+
+
+
+
+
+
+
