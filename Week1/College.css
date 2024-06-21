@@ -1,5 +1,10 @@
-/* General setup */
+/* 
+Name: Chinmay Singh
+Date: 2024-06-21
+File Name: college.css
+This is the css file for the College page */
 
+/* General setup */
 
 
 * {
@@ -71,6 +76,45 @@
   h1 {
     text-align: center; 
   }
+
+  h2 {
+    text-indent: 20px; 
+  }
+
+  p {
+    text-indent: 20px; 
+  }
+
+  a {
+    text-decoration: underline; 
+    outline: none; 
+  }
+
+  a:link {
+    color: blue; 
+  }
+  
+  a:visited {
+    color: red; 
+  }
+
+  a:focus {
+    background: rgba(170, 102, 102, 0.4); 
+    text-decoration: none; 
+  }
+  
+  a:hover {
+    background: rgba(170, 102, 102, 0.4); 
+    text-decoration: none; 
+  }
+
+  
+
+  
+
+  
+
+  
 
 
 
