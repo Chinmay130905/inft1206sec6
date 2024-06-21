@@ -95,7 +95,7 @@ This is the css file for the College page */
   }
   
   a:visited {
-    color: rgb(67, 61, 61); 
+    color: rgb(163, 34, 34); 
   }
 
   a:focus {
@@ -120,14 +120,19 @@ This is the css file for the College page */
   }
 
   ol {
-    list-style-type: lower-roman;
+    list-style-type: lower-alpha;
+  }
+
+  nav li {
+   list-style-type: none;
   }
 
   nav a {
-    outline: black; 
+    outline: none; 
     text-decoration: none;
-    border: 3px solid;
-    padding: 4 px;
+    border: 1px solid #a66;
+    padding: 2 px;
+    display: block;
     width: 80%;
     padding: 20%,20%;
     text-align: center;
