@@ -33,11 +33,22 @@ const insertz = [
 "turned into a slug and crawled away"
 ];
 
-3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
+// 3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 
 randomize.addEventListener('click', result);
 
 function result() {
+
+    let newStory = randomValueFromArray(storyText);
+    const xItem = randomValueFromArray(insertX);
+    const yItem = randomValueFromArray(insertY);
+    const zItem = randomValueFromArray(insertZ);
+    const name = customName.value;
+
+    newStory = newStory.replace(/:insertx:/g, xItem);
+    newStory = newStory.replace(/:inserty:/g, yItem);
+    newStory = newStory.replace(/:insertz:/g, zItem);
+    newStory = newStory.replace(/:bob:/g, name || 'Bob');
 
   if(customName.value !== '') {
     const name = customName.value;
