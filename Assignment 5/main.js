@@ -1,12 +1,18 @@
+/*
+Chinmay Singh 
+100948966
+2024-08-09
+*/
+
 // functionality for showing/hiding the comments section
 
-const showHideBtn = document.querySelector('.show-hide');
-const commentWrapper = document.querySelector('.comment-wrapper');
+var showHideBtn = document.querySelector('.show-hide');
+var commentWrapper = document.querySelector('.comment-wrapper');
 
 commentWrapper.style.display = 'none';
 
 showHideBtn.onclick = function() {
-  let showHideText = showHideBtn.textContent;
+  var showHideText = showHideBtn.textContent;
   if(showHideText === 'Show comments') {
     showHideBtn.textContent = 'Hide comments';
     commentWrapper.style.display = 'block';
@@ -18,10 +24,10 @@ showHideBtn.onclick = function() {
 
 // functionality for adding a new comment via the comments form
 
-const form = document.querySelector('.comment-form');
-const nameField = document.querySelector('#name');
-const commentField = document.querySelector('#comment');
-const list = document.querySelector('.comment-container');
+var form = document.querySelector('.comment-form');
+var nameField = document.querySelector('#name');
+var commentField = document.querySelector('#comment');
+var list = document.querySelector('.comment-container');
 
 form.onsubmit = function(e) {
   e.preventDefault();
@@ -29,11 +35,11 @@ form.onsubmit = function(e) {
 };
 
 function submitComment() {
-  const listItem = document.createElement('li');
-  const namePara = document.createElement('p');
-  const commentPara = document.createElement('p');
-  const nameValue = nameField.value;
-  const commentValue = commentField.value;
+  var listItem = document.createElement('li');
+  var namePara = document.createElement('p');
+  var commentPara = document.createElement('p');
+  var nameValue = nameField.value;
+  var commentValue = commentField.value;
 
   namePara.textContent = nameValue;
   commentPara.textContent = commentValue;
